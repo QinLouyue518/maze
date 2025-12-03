@@ -1,0 +1,5 @@
+{
+  "name": "MazeMaster: C Language Algorithms",
+  "description": "An interactive educational platform for learning Maze Backtracking algorithms in C, featuring visualization and AI tutoring.",
+  "requestFramePermissions": []
+}
