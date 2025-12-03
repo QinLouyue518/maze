@@ -1,4 +1,4 @@
-import { MazeGrid, Position, AlgorithmStep } from "../types";
+import { MazeGrid, Position, AlgorithmStep } from "../types.ts";
 
 const DIRECTIONS = [
   { row: -1, col: 0, name: '上' }, // Up

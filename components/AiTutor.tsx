@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Send, Bot, User, Sparkles } from 'lucide-react';
-import { ChatMessage } from '../types';
-import { sendMessageToGemini } from '../services/geminiService';
+import { ChatMessage } from '../types.ts';
+import { sendMessageToGemini } from '../services/geminiService.ts';
 
 const AiTutor: React.FC = () => {
   const [messages, setMessages] = useState<ChatMessage[]>([

@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
-import MazeVisualizer from './components/MazeVisualizer';
-import MazeEditor from './components/MazeEditor';
-import AiTutor from './components/AiTutor';
-import ConceptCard from './components/ConceptCard';
-import { generateMazeSteps, DEFAULT_MAZE } from './utils/mazeLogic';
-import { MazeGrid, AlgorithmStep } from './types';
+import MazeVisualizer from './components/MazeVisualizer.tsx';
+import MazeEditor from './components/MazeEditor.tsx';
+import AiTutor from './components/AiTutor.tsx';
+import ConceptCard from './components/ConceptCard.tsx';
+import { generateMazeSteps, DEFAULT_MAZE } from './utils/mazeLogic.ts';
+import { MazeGrid, AlgorithmStep } from './types.ts';
 import { Compass, GraduationCap } from 'lucide-react';
 
 const App: React.FC = () => {

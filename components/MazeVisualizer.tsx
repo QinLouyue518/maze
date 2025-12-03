@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { MazeGrid, AlgorithmStep, Position } from '../types';
+import { MazeGrid, AlgorithmStep, Position } from '../types.ts';
 import { Play, Pause, RotateCcw, ChevronRight, ChevronLeft, MapPin, AlertTriangle } from 'lucide-react';
 
 interface MazeVisualizerProps {

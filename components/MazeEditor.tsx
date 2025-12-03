@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MazeGrid, CellType } from '../types';
+import { MazeGrid, CellType } from '../types.ts';
 import { Edit3, Check, RotateCcw } from 'lucide-react';
 
 interface MazeEditorProps {
