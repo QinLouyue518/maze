@@ -37,28 +37,26 @@
   <!-- Add Babel for in-browser JSX/TSX transpilation -->
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <!-- 
-    Cleaned up and corrected importmap.
-    This tells the browser where to find external libraries like React.
+    A clean, non-conflicting importmap. This is the definitive fix.
   -->
   <script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@18.2.0",
-    "react-dom/client": "https://esm.sh/react-dom/client@18.2.0",
-    "@google/genai": "https://esm.sh/@google/genai@0.2.1",
-    "lucide-react": "https://esm.sh/lucide-react@0.368.0"
+  {
+    "imports": {
+      "react": "https://esm.sh/react@18.2.0",
+      "react-dom/client": "https://esm.sh/react-dom/client@18.2.0",
+      "@google/genai": "https://esm.sh/@google/genai@0.2.1",
+      "lucide-react": "https://esm.sh/lucide-react@0.368.0"
+    }
   }
-}
-</script>
+  </script>
 </head>
   <body>
     <div id="root"></div>
     <!-- 
       - type="text/babel": Tells the browser to hand this script to Babel.
       - data-presets="react,typescript": CRITICAL! Tells Babel to load presets for React (JSX) and TypeScript.
-      - data-type="module": Tells Babel to treat this as an ES module to handle imports/exports.
       - src="./index.tsx": Points to your main application file.
     -->
-    <script type="text/babel" data-presets="react,typescript" data-type="module" src="./index.tsx"></script>
+    <script type="text/babel" data-presets="react,typescript" src="./index.tsx"></script>
   </body>
 </html>
